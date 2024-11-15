@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="bill-input">
+                <h2>BILL</h2>
+                <input type="number" id="bill" min="0">
+            </div>
+            <div class="tip-section">
+                <p class="tip-selection">Tip selection %</p>
+                <div class="tip-container">
+                    <button class="tip-button" data-value="0.05">5%</button>
+                    <button class="tip-button" data-value="0.1">10%</button>
+                    <button class="tip-button" data-value="0.15">15%</button>
+                    <button class="tip-button" data-value="0.25">25%</button>
+                    <button class="tip-button" data-value="0.5">50%</button>
+                    <button id="custom-tip">Custome</button>
+                </div>
+            </div>
+            <div class="customer-number">
+                <p>Number of people</p>
+                <div class="input-customer-number">
+                <i class="fa-solid fa-users"></i>
+                <input type="number" min="0" id="customer-number">
+                <button class="split-btn" id="slipt">Split</button>
+                </div>
+            </div>
+        </div>
+        <div class="rigth-container">
+            <div class="tip-amount">
+                <div class="details">
+                    <h3>Tip Amount:</h3>
+                    <p>/person</p>
+                </div>
+                <div class="price" id="tip">0.00</div>
+            </div>
+            <div class="bill-amount">
+                <div class="details">
+                    <h3>Amount:</h3>
+                    <p>/person</p>
+                </div>
+                <div class="price" id="total-bill">0.00</div>
+            </div>
+            <div class="buttons">
+                <button id="pay-button">PAY</button>
+                <button id="reset-btn">RESET</button>
+            </div>
+        </div>
+
+
+        <div class="custome-tip">
+            <h3>How much would you like to add?</h3>
+            <input type="number" min="0" id="cutome-tip-value">
+            <div class="buttons">
+                <button id="add-tip-btn">ADD</button>
+                <button id="back-tip-btn">BACK</button>
+            </div>
+        </div>
+
+        <div class="payment-message">
+            <h1>Thank you so much!</h1>
+            <h3>We hope to see you again</h3>
+        </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
